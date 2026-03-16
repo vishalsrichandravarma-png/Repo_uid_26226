@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My E-commerce Website</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+                "header header"
+                "sale sale"
+                "sidebar main"
+                "footer footer";
+            gap: 10px;
+            padding: 10px;
+        }
+        .header{
+            grid-area: header;
+            background-color:gray ;
+            padding: 10px;
+            text-align: center;
+        }
+        .sale{
+            grid-area: sale;
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: gray;
+            padding: 10px;
+        }
+        .main{
+            grid-area: main;
+            background-color: gray;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+        }
+        .product{
+            background-color:lightgray;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product-image{
+            width: 200px;
+            height: 200px;
+        }
+        .button{
+            background-color: grey;
+            color: black;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .button:hover{
+            background-color: lightslategray;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TOYS 4 TOYS</h1>
+        </div>
+        <div class="sale">
+            <p>Special Sale!</p>
+        </div>
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>RC CARS</li>
+                <li>LEGOS</li>
+                <li>HAPTIC TOYS</li>
+                <li>BOARD GAMES</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="product">
+                <img class="product-image" src="C:\Users\visha\OneDrive\Pictures\Screenshots\rc car.webp" alt="RC Car">
+                <h3>RC Car</h3>
+                <p>Price: $29.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="C:\Users\visha\OneDrive\Pictures\Screenshots\lego.jpg" alt="LEGO Set">
+                <h3>LEGO Set</h3>
+                <p>Price: $49.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="C:\Users\visha\OneDrive\Pictures\Screenshots\haptic.jpg" alt="Haptic Toy">
+                <h3>Haptic Toy</h3>
+                <p>Price: $19.99</p>    
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="C:\Users\visha\OneDrive\Pictures\Screenshots\monopoly.jpg" alt="Board Game">
+                <h3>Board Game</h3>
+                <p>Price: $39.99</p>
+                <button class="button">Add to Cart</button>             
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; copyright TOYS 4 TOYS Website. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

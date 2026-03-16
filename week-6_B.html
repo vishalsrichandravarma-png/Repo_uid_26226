@@ -1,0 +1,365 @@
+Main:
+<!DOCTYPE html>
+<html>
+<head>
+<title>TOYS 4 TOYS</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+color:#fff;
+background:url("backgroundimages.jpg") center/cover fixed no-repeat;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.75);
+z-index:-1;
+}
+.container{
+display:grid;
+grid-template:
+"header header" auto
+"sale sale" auto
+"sidebar main" 1fr
+"footer footer" auto /220px 1fr;
+gap:15px;
+padding:15px;
+}
+.header,.sale,.sidebar,.main,.footer{
+background:rgba(40,40,40,.65);
+border-radius:12px;
+padding:15px;
+box-shadow:0 0 15px #000;
+}
+.header{grid-area:header;text-align:center;font-size:28px;letter-spacing:3px;}
+.sale{grid-area:sale;overflow:hidden;white-space:nowrap;height:40px;position:relative;}
+.sale p{
+position:absolute;
+color:#00ffd5;
+font-size:20px;
+animation:move 10s linear infinite;
+}
+@keyframes move{
+from{left:-100%;}
+to{left:100%;}
+}
+.sidebar{grid-area:sidebar}
+.sidebar ul{list-style:none;padding:0}
+.sidebar li{margin:15px 0}
+.sidebar a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+.sidebar a:hover{color:#00ffd5;padding-left:8px}
+.main{grid-area:main}
+iframe{width:100%;height:520px;border:0;background:rgba(0,0,0,.5);border-radius:10px}
+.footer{grid-area:footer;text-align:center;font-size:14px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">TOYS 4 TOYS</div>
+<div class="sale">
+<p>🔥 SPECIAL SALE – UP TO 50% OFF ON ALL TOYS 🔥</p>
+</div>
+<div class="sidebar">
+<h2>Categories</h2>
+<ul>
+<li><a href="rc-cars.html" target="contentFrame">RC CARS</a></li>
+<li><a href="legos.html" target="contentFrame">LEGOS</a></li>
+<li><a href="haptic-toys.html" target="contentFrame">HAPTIC TOYS</a></li>
+<li><a href="board-games.html" target="contentFrame">BOARD GAMES</a></li>
+</ul>
+</div>
+<div class="main">
+<iframe name="contentFrame"></iframe>
+</div>
+<div class="footer">
+© TOYS 4 TOYS Website
+</div>
+</div>
+</body>
+</html>
+
+
+
+Sub1:
+<!DOCTYPE html>
+<html>
+<head>
+<title>RC Cars</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:20px;
+    background-color: gray;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto auto;  /* 2 rows */
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card-img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.price{
+    font-size:18px;
+    color:green;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <img class="card-img" src="C:\Users\visha\OneDrive\Pictures\Screenshots\flare.jpg" alt="RC Car 1">
+        <h2>FLARE</h2>
+        <p>High speed remote control car.</p>
+        <p class="price">$29.99</p>
+    </div>
+    <div class="card">
+        <img class="card-img" src="C:\Users\visha\OneDrive\Pictures\Screenshots\dash.jpg" alt="RC Car 2">
+        <h2>DASH</h2>
+        <p>Mini remote control car.</p>
+        <p class="price">$34.99</p>
+    </div>
+    <div class="card">
+        <img class="card-img" src="C:\Users\visha\OneDrive\Pictures\Screenshots\ghost.jpg" alt="RC Car 3">
+        <h2>GHOST</h2>
+        <p>Drift racing car model.</p>
+        <p class="price">$39.99</p>
+    </div>
+    <div class="card">
+        <img class="card-img" src="C:\Users\visha\OneDrive\Pictures\Screenshots\rc car.webp" alt="RC Car 4">
+        <h2>SHADOW</h2>
+        <p>RC drift car</p>
+        <p class="price">$44.99</p>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+Sub2:
+<!DOCTYPE html>
+<html>
+<head>
+<title>LEGO Toys</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:20px;
+    background-color: gray;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto auto;  /* 2 rows */
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card-img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.price{
+    font-size:18px;
+    color:green;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\lego.jpg" alt="lego" class="card-img">
+<h2>LEGO SHUTTEL</h2>
+<p>space shuttel</p>
+<p class="price">$19.99</p> 
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\lego3.jpg" alt="lego space" class="card-img">
+<h2>TAJ MAHAL</h2>
+<p>beautiful indian architecture</p>
+<p class="price">$24.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\lego4.jpg" alt="lego police" class="card-img">
+<h2>colloseum</h2>
+<p>ancient roman amphitheater</p>
+<p class="price">$29.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\lego marvel.avif" alt="lego racing" class="card-img">
+<h2>LEGO STARK TOWER</h2>
+<p>Build a towering LEGO structure.</p>
+<p class="price">$34.99</p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+Sub3:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haptic Toys</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:20px;
+    background-color: gray;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card-image{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.price{
+    font-size:18px;
+    color:green;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\haptic.jpg" alt="haptic" class="card-image">
+<h2>LAUTTIE SHUFFEL</h2>
+<p>Fun magnetic slider toy for stress relief.</p>
+<p class="price">$9.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\shuffel2.jpg" alt="haptic fidget" class="card-image">
+<h2>LAUTTIE SHUFFEL 2</h2>
+<p>Fun magnetic slider toy for stress relief.</p>
+<p class="price">$14.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\shuffel3.jpg" alt="haptic sensory" class="card-image">
+<h2>SPINNER</h2>
+<p>casino style spinner</p>
+<p class="price">$19.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\shuffel4.jpg" alt="haptic spinner" class="card-image">
+<h2>HAPTIC COIN</h2>
+<p>haptic magnetic coin with the satisfying motion.</p>
+<p class="price">$24.99</p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+Sub4:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Board Puzzles</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:20px;
+    background-color: gray;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card-image{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.price{
+    font-size:18px;
+    color:green;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\monopoly.jpg" alt="board puzzle" class="card-image">
+<h2>Monopoly</h2>
+<p>Classic board game for family fun.</p>
+<p class="price">$9.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\bg2.jpg" alt="board puzzle" class="card-image">
+<h2>MONOPOLY special edition</h2>
+<p>Classic board game for family fun.</p>
+<p class="price">$14.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\bg3.jpg" alt="board puzzle" class="card-image">
+<h2>D AND D</h2>
+<p>Role-playing board game for adventurers.</p>
+<p class="price">$19.99</p>
+</div>
+<div class="card">
+<img src="C:\Users\visha\OneDrive\Pictures\Screenshots\bg4.jpg" alt="board puzzle" class="card-image">
+<h2>JUMANJI</h2>
+<p>Adventure board game for thrill-seekers.</p>
+<p class="price">$24.99</p>
+</div>
+</div>
+</body>
+</html>
