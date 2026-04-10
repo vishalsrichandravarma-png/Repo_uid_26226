@@ -4,8 +4,6 @@
     <title>Logic Programs</title>
     <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
         background: #1a1a2e;
         display: flex;
         justify-content: center;
@@ -34,10 +32,6 @@
         box-sizing: border-box;
         text-align: center;
     }
-    input:focus {
-        outline: none;
-        border-color: #4a90e2;
-    }
     .buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -57,8 +51,7 @@
     }
     button:hover { opacity: 0.85; }
     .output {
-        background: #f0f4f8;
-      
+        background: gray;
         padding: 20px;
         border-radius: 8px;
         min-height: 60px;
@@ -68,7 +61,6 @@
     </style>
   </head>
   <body>
-
     <div class="container">
         <h2>Logic Programs</h2>
         <input type="number" id="numInput" placeholder="Enter a number" />
